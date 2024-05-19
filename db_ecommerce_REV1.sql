@@ -41,14 +41,6 @@ CREATE TABLE `cliente` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- RELACIONES PARA LA TABLA `cliente`:
---   `ID_Usuario`
---       `usuario` -> `ID_Usuario`
---   `ID_Usuario`
---       `usuario` -> `ID_Usuario`
---
-
---
 -- Volcado de datos para la tabla `cliente`
 --
 
@@ -69,18 +61,6 @@ CREATE TABLE `compra` (
   `Domicilio_Cliente` varchar(30) NOT NULL,
   `Info_compra` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- RELACIONES PARA LA TABLA `compra`:
---   `ID_Cliente`
---       `cliente` -> `ID_Cliente`
---   `ID_Producto`
---       `producto` -> `ID_Producto`
---   `ID_Cliente`
---       `cliente` -> `ID_Cliente`
---   `ID_Producto`
---       `producto` -> `ID_Producto`
---
 
 --
 -- Volcado de datos para la tabla `compra`
@@ -107,14 +87,6 @@ CREATE TABLE `operario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- RELACIONES PARA LA TABLA `operario`:
---   `ID_Usuario`
---       `usuario` -> `ID_Usuario`
---   `ID_Usuario`
---       `usuario` -> `ID_Usuario`
---
-
---
 -- Volcado de datos para la tabla `operario`
 --
 
@@ -136,10 +108,6 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- RELACIONES PARA LA TABLA `producto`:
---
-
---
 -- Volcado de datos para la tabla `producto`
 --
 
@@ -159,10 +127,6 @@ CREATE TABLE `usuario` (
   `Nombre_Usuario` varchar(20) NOT NULL,
   `Contraseña` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- RELACIONES PARA LA TABLA `usuario`:
---
 
 --
 -- Volcado de datos para la tabla `usuario`
